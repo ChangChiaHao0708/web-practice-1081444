@@ -11,3 +11,11 @@ table{
 td{
     border-bottom: 1px solid blue;
 }
+
+tr:nth-child(odd){
+    background-color: #36688D;
+}
+
+tr:nth-child(even){
+    background-color: #BDA589;
+}

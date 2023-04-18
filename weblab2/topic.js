@@ -15,7 +15,7 @@ function setMonthAndDay(startMonth, startDay){
     startDate.setHours(0);
     startDate.setMinutes(0);
     startDate.setSeconds(0);
-    console.log("set");
+    // console.log("set");
 }
 
 setMonthAndDay(6,6);
