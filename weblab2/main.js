@@ -1,4 +1,5 @@
-$(function(){
+$.myfunction = (function(){
+    $("#courseTable").empty();
     $("#courseTable").append("<tr><th>場次</th><th>時間</th><th>主題</th></tr>");
     let topicCount = topic.length;
 
@@ -16,3 +17,19 @@ $(function(){
         )
     }
 });
+
+$("input").change(function(){
+    let date = new Date($(this).val());
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+
+    setMonthAndDay(month, day);
+    $.myfunction();
+    // console.log($(this));
+    // console.log(typeof(date));
+    // console.log(date);
+    // console.log(month);
+    // console.log(day);
+});
+
+$.myfunction();
